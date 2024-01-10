@@ -1,0 +1,39 @@
+---
+title: "Exercice 1"
+author: "Mamadou Billo Diallo"
+output:
+  word_document: default
+  html_document: default
+---
+
+  # Réflexion
+    
+    Ce graphique ente le manufacturer et la consommation de carburant en autoroute nous montre que la voiture Volkswagen consomme plus sur l’autoroute et ceux qui consomme moins sont Dodge et jeep land.
+    
+    
+    # Mon premier graphique
+    
+    ```{r load-libraries-data, warning=FALSE, message=FALSE}
+    library(tidyverse)
+    library("ggplot2")
+    cars <- read_csv("data/cars.csv")
+    ```
+    
+```{r}
+ggplot(data = cars, 
+       mapping = aes(x =hwy  , y =manufacturer           ,
+ colour = manufacturer               )) +
+  geom_point() 
+```
+
+  # Réflexion Image
+  La couleur est bien utilisée pour montrer la différence de valeur entre les candidats et même les couleurs pour les pourcentages sont même respectées avec le même principe.
+Le même style de texte est utilisé pour décrire tous les candidats.
+Les gros titres sortent vraiment bien avec un poids de texte qui nous indique que c’est un titre.
+Ayant tester l’image sur le site Coblis — Color Blindness Simulator – Colblindor (color-blindness.com) je pense que même les daltoniens sont à mesure de faire la distinction des couleurs de cette image.
+Il Ya de la proximité aussi dans les éléments des images et ils sont bien alignés.
+Il se trouve que l’image est sur le format JFIF et lorsqu’on zoom la photo on observe du contraste qui se perd et l’image devienne un peu flou.
+
+
+ 
+ 
